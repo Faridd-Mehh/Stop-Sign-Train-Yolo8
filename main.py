@@ -2,7 +2,7 @@ import multiprocessing as mp
 from ultralytics import YOLO
 
 def main():
-    model = YOLO("yolov8n.pt")  # transfer learning (hızlı yakınsar)
+    model = YOLO("yolov8n.pt")
     results = model.train(
         data=r"C:\Users\ASUS\Desktop\yolo8_Stop\data.yaml",
         epochs=50,
@@ -21,3 +21,4 @@ def main():
 if __name__ == "__main__":
     mp.freeze_support()
     main()
+
