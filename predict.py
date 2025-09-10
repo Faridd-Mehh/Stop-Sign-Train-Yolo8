@@ -14,9 +14,10 @@ for r in model.predict(
     frame = r.plot()
     cv.imshow("YOLOv8 - STOP", frame)
 
-    # Go next result with any button
+    # Go next result with any key
     key = cv.waitKey(0) & 0xFF
     if key in (27, ord('q')):
         break
 
 cv.destroyAllWindows()
+
